@@ -26,7 +26,7 @@ app = FastAPI()
 
 @app.get("/")
 def hello():
-    return {"message":"Hello TutLinks.com"}
+    return {"message":"Hello"}
 
 def top_filtering(logits, top_k=0., top_p=0.9, threshold=-float('Inf'), filter_value=-float('Inf')):
     """ Filter a distribution of logits using top-k, top-p (nucleus) and/or threshold filtering
